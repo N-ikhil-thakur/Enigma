@@ -26,3 +26,15 @@ def rotate_dict_keys(dic , step):
             newKeys[-rot_step] = keys[i]
 
     return  dict(zip(newKeys,values))
+
+def interchange_keys_values(dic):
+    keys = list(dic.keys())
+    values = list(dic.values())
+    newKeys  = keys.copy()
+    newValues = values.copy()
+
+    for x in range (0 , len(keys)):
+        newValues[x] = keys[x]
+        newKeys[x] = values[x]
+
+    return dict(zip(newKeys , newValues))

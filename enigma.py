@@ -55,7 +55,7 @@ if(crypto_type == 'E' or  crypto_type == 'D'):
                         o_w3 = rotate_dict_keys(o_w3 , 1)
         else:
             pass
-    print( '\033[34m' + "Required Text :" + f'{"".join(cypher_text)}')
+    print(  "Required Text :" + "".join(cypher_text))
 
 else:
     print("Invalid operation")

@@ -30,6 +30,11 @@
 
 from encryptor import EnigmaEncryptor
 
-encryptor = EnigmaEncryptor(-2, 5, 1, 2, 3, 1, 4, 5, 2, 4, 5)
-print(f'|{encryptor.encrypt("nnnnnnnnnn")}|')
-print(encryptor.encrypt('/c>'))
+encryptor = EnigmaEncryptor(
+    {'A': 'a', '*': 's', 'W': 'Q'}, 1, 2, 3, 1, 4, 5, 2, 4, 5)
+
+print('\n')
+print('\n')
+print('|'+encryptor.encrypt(r"~@#i 6le-Cw89 7ovkg q-l[`cIsj1]n")+'|')
+print('\n')
+print('\n')

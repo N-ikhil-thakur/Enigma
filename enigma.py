@@ -10,6 +10,11 @@ w2 = {'A':'A' , 'B':'H' , 'C':'I' , 'D':'J' , 'E':'B' , 'F':'G' , 'G':'K' , 'H':
 
 w3 = {'A':'A' , 'B':'O' , 'C':'P' , 'D':'U' , 'E':'B' , 'F':'Q' , 'G':'R' , 'H':'V' , 'I':'C' , 'J':'M' , 'K':'N' , 'L':'W' ,'M':'D' ,  'N':'K' , 'O':'L' , 'P':'Y' , 'Q':'E' , 'R':'H' , 'S':'I' , 'T':'T' , 'U':'F' , 'V':'G' , 'W':'J' , 'X':'S' , 'Y':'X' , 'Z':'Z'}
 
+w4 = {}
+
+w5 = {}
+
+plug_board = {}
 
 o_w1 = interchange_keys_values(w1)
 o_w2 = interchange_keys_values(w2)
@@ -55,7 +60,14 @@ if(crypto_type == 'E' or  crypto_type == 'D'):
                         o_w3 = rotate_dict_keys(o_w3 , 1)
         else:
             pass
-    print(  "Required Text :" + "".join(cypher_text))
+    print( '\033[37m' + 'Required Text :' )
 
 else:
     print("Invalid operation")
+
+
+
+
+
+
+

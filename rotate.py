@@ -24,7 +24,7 @@ def rotate_dict_keys(dic , step):
             newKeys[rot_step] = keys[i]
         else:
             newKeys[-rot_step] = keys[i]
-
+                           
     return  dict(zip(newKeys,values))
 
 def interchange_keys_values(dic):

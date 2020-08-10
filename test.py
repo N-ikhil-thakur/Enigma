@@ -31,10 +31,14 @@
 from encryptor import EnigmaEncryptor
 
 encryptor = EnigmaEncryptor(
-    {'A': 'a', '*': 's', 'W': 'Q'}, 1, 2, 3, 1, 4, 5, 2, 4, 5)
+    {'A': 'a', '*': 's', 'W': 'Q'}, 1, 2, 5, 7, 4, 9, 2, 4, 5)
+
 
 print('\n')
+input_text = str(input("Enter your text: "))
 print('\n')
-print('|'+encryptor.encrypt(r"~@#i 6le-Cw89 7ovkg q-l[`cIsj1]n")+'|')
-print('\n')
+
+
+encrypted_text = encryptor.encrypt(input_text)
+print(f'Output:<< {encrypted_text} >>')
 print('\n')
